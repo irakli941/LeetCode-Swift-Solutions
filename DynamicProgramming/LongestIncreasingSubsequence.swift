@@ -1,17 +1,9 @@
-//
-//  LongestIncreasingSubsequence.swift
-//  
-//
-//  Created by Irakli Shelia on 05.01.24.
-//
-
 /**
- * Question Link: https://leetcode.com/problems/guess-number-higher-or-lower-ii/
- * Primary idea: Typical DP problem
- * For each guess:
- * 1) Get the worse case of every choice to guarantee the result
- * 2) Get the least cost among the guaranteed results
- * Time Complexity: O(nlogn), Space Complexity: O(n^2)
+ * Question Link: https://leetcode.com/problems/longest-increasing-subsequence/
+ * Primary idea: Dynamic Programming. Use a DP array to store the longest increasing subsequence up to each index, comparing each element with its previous elements to find the maximum valid subsequence length.
+ *
+ * Time Complexity: O(n^2), Space Complexity: O(n)
+ *
  */
 
 class Solution {
